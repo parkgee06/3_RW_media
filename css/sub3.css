@@ -174,8 +174,8 @@
 }
 
 #content .sub3_marinelife .card .text .etc_box .btn{
-   margin-left:auto;
-   padding: 10px 26px;
+   margin-left: auto;
+   padding: 14px 25px 0px 25px;
    background: #fff;
    border: 2px solid #111827;
    border-radius: 0.5rem;
@@ -183,16 +183,14 @@
    position: relative;
    transition: all .3s;
    z-index: 1;
+   color: #111827;
+   font-size: .8rem;
+   font-weight: 500;
    /* margin-top: 20px; */
 }
 
-#content .sub3_marinelife .card .text .etc_box .btn a{
-   color: #111827;
-}
 #content .sub3_marinelife .card .text .etc_box .btn:hover{
    background: #111827;
-}
-#content .sub3_marinelife .card .text .etc_box .btn:hover a{
    color: #f9fafb;
 }
 
