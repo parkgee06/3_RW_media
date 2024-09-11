@@ -126,6 +126,7 @@ h5{
 #headerArea h1 a{
     color: #fff;
     text-decoration: none;
+    display: block;
 }
 
 #headerArea h1 a .logo_img{
@@ -134,6 +135,7 @@ h5{
     width: 300px;
     height: 63px;
     margin: 46px 0 45px 0;
+    display: block;
     /* border: 1px solid red; */
 }
 
@@ -185,6 +187,7 @@ h5{
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+    /* display: block; */
 }
 
 /* 햄버거메뉴 */
