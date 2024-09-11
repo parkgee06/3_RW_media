@@ -129,7 +129,7 @@ h5{
     display: block;
 }
 
-#headerArea h1 a .logo_img{
+#headerArea h1 a{
     background: url(../images/rw_logo_header.png) no-repeat center;
     background-size: cover;
     width: 300px;

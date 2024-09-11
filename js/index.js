@@ -14,8 +14,8 @@ $('.menu_1 .con_1 .thum div a').click(function(e){ //이전버튼 클릭시
     var ind2 = $(this).index('.menu_1 .con_1 .thum div a');
     //console.log(ind2);   0 1 2 3
     $('#content .menu_1 .con_1 .box_1').css('background','url('+ stories[ind2].isrc+')').css('background-size', 'cover');
-    $('#content .menu_1 .box h5').text(stories[ind2].tit5);
-    $('#content .menu_1 .box p').text(stories[ind2].desc);
+    $('#content .menu_1 .box .h5_area').text(stories[ind2].tit5);
+    $('#content .menu_1 .box .txt_box').text(stories[ind2].desc);
     
 });
 
