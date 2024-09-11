@@ -496,21 +496,26 @@
   });
   
   
+// 초기 설정: gal_2와 gal_3를 숨기기
+$('.gal_2,.gal_3').hide();
 
-  //탭메뉴
-  $('.gal_2,.gal_3').hide();
-
-  $('.tab_menu li a').click(function(e){
+// 탭 메뉴 클릭 이벤트 처리
+$('.tab_menu li a').click(function(e){
     e.preventDefault();
 
-    var ind = $(this).index('.tab_menu li a'); // 0 1 2 
+    // 클릭된 탭의 인덱스 찾기
+    var ind = $(this).index('.tab_menu li a'); // 0, 1, 2 
 
-     $('.gal_1,.gal_2,.gal_3').hide();
-     $('#content section:eq('+ (ind+1) +')').show();
+    // 모든 갤러리 숨기기
+    $('.gal_1,.gal_2,.gal_3').hide();
+    
+    // 해당 인덱스의 갤러리만 표시하기
+    $('.contlist:eq('+ ind +')').show();
 
-     $('.tab_menu li a').css('color','#ccc');
-     $(this).css('color','#1f1f1f');
+    // 탭 메뉴의 색상과 밑줄 스타일 설정
+    $('.tab_menu li a').css('color','#ccc');
+    $(this).css('color','#1f1f1f');
 
-     $('.tab_menu li').css('border-bottom','3.5px solid #ccc');
-     $(this).parent('li').css('border-bottom','3.5px solid #1f1f1f');
-  });
+    $('.tab_menu li').css('border-bottom','3.5px solid #ccc');
+    $(this).parent('li').css('border-bottom','3.5px solid #1f1f1f');
+});
