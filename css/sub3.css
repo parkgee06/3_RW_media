@@ -25,7 +25,7 @@
    left: 50%;
    width: 65px;
    height: 65px;
-   margin-left: 280px;
+   margin-left: 220px;
    background: url(../images/h3_before.png) no-repeat;
    background-size: cover;
 }
@@ -267,6 +267,14 @@
       & .text .etc_box .btn{
          width: 100%;
          margin-top: 10px;
+         padding: 8px 0px;
       }
+   }
+}
+
+/* 모바일2 */
+@media screen and (max-width:420px) {
+   #content h2::before{
+      display: none;
    }
 }
