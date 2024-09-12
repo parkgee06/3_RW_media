@@ -118,41 +118,21 @@ h5{
     overflow: hidden;
 }
 
-/* #headerArea h1{ */
-    /* float: left; */
-    /* margin-top: 15px; */
-/* } */
 
 #headerArea h1 a{
     color: #fff;
     text-decoration: none;
     display: block;
-}
-
-#headerArea h1 a{
     background: url(../images/rw_logo_header.png) no-repeat center;
     background-size: cover;
     width: 300px;
     height: 63px;
-    margin: 46px 0 45px 0;
+    margin: 45px 0;
     display: block;
     /* border: 1px solid red; */
 }
 
-/* #headerArea h1 a .logo_img::after{
-    border: 1px solid red;
-    content: "";
-    position: absolute;
-    background: url(../images/rw_logo_header.png);
-    top: 0;
-    left: 0;
-    width: 220px;
-    height: 47px;
-} */
 
-/* #headerArea h1 a img{
-    width: 220px;
-} */
 
 #headerArea #gnb{
     margin-top: 25px;
@@ -444,13 +424,11 @@ h5{
             width: 96%;
             margin: 0 2%;
         }
-        & h1 a .logo_img{
-            background: url(../images/rw_logo-B-01.png) no-repeat center;
-            background-size: cover;
-            width: 80px;
-            height: 102px;
-            margin: 35px 0;
-        }
+        & h1 {
+            a {
+                margin: 35px 0;
+    }
+}
         & h3 a p{
             font-size: .9rem;
         }
@@ -528,12 +506,13 @@ h5{
         & h3{
             font-size: 1.7rem;
         }
-        & h1 a .logo_img{
-            background: url(../images/rw_logo_header.png) no-repeat center;
-            background-size: cover;
-            width: 180px;
-            height: 38px;
-        }
+        & h1 {
+            a {
+                width: 180px;
+                height: 38px;
+                margin: 30px 0;
+    }
+}
         & .menuOpen{
             display:block;
         }
@@ -679,13 +658,11 @@ h5{
         & h3{
             font-size: 1.7rem;
         }
-        & h1 a .logo_img{
-            background: url(../images/rw_logo_header.png) no-repeat center;
-            background-size: cover;
-            width: 180px;
-            height: 38px;
-            margin: 25px 0;
-        }
+        & h1 {
+            a {
+                margin: 25px 0;
+    }
+}
         & .menuOpen{
             display:block;
         }
