@@ -23,7 +23,7 @@
    left: 50%;
    width: 65px;
    height: 65px;
-   margin-left: 280px;
+   margin-left: 180px;
    background: url(../images/h3_before.png) no-repeat;
    background-size: cover;
 }
@@ -302,4 +302,27 @@
    #content section .con_all .media .img_item li:nth-of-type(2){display: none;}
 }
 
+/* 최소 사이즈 처리 */
+@media screen and (max-width:420px) {
+   #content section {
+      height: 140px;
+   }
+   #content h2::before{
+      display: none;
+   }
 
+   #content section .con_all {
+      padding: 0 50px 50px 50px;
+}
+   #content section .marine_animals .list_item span:nth-of-type(11),
+   #content section .marine_animals .list_item span:nth-of-type(12),
+   #content section .marine_animals .list_item span:nth-of-type(13),
+   #content section .marine_animals .list_item span:nth-of-type(14),
+   #content section .marine_animals .list_item span:nth-of-type(15),
+   #content section .marine_animals .list_item span:nth-of-type(16),
+   #content section .marine_animals .list_item span:nth-of-type(17),
+   #content section .marine_animals .list_item span:nth-of-type(18),
+   #content section .marine_animals .list_item span:nth-of-type(19){
+      display: none;
+   }
+}

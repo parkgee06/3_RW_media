@@ -278,6 +278,9 @@
 /* 모바일2 */
 @media screen and (max-width:420px) {
    #content .con_margin {margin-bottom: 390px;}
+   #content h2::before{
+      display: none;
+   }
    #wrap #content .stories .con_margin:nth-of-type(1)>div{
       bottom: -125%;
    }
