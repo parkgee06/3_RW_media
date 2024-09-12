@@ -96,21 +96,23 @@
 
 #content h2::before{
    content: '';
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    width: 65px;
-    height: 65px;
-    margin-left: 280px;
-    background: url(../images/h3_before.png) no-repeat;
-    background-size: cover;
+   position: absolute;
+   top: 10px;
+   left: 50%;
+   width: 65px;
+   height: 65px;
+   margin-left: 280px;
+   background: url(../images/h3_before.png) no-repeat;
+   background-size: cover;
 }
 
 #content h3{
    font-size: 5.5vw;
    color: #fff;
    margin-bottom: 50px;
-   box-shadow: inset 0 -60px 0 #EE5E01;
+   padding: 2px 15px;
+   background: #EE5E01;
+   /* box-shadow: inset 0 -60px 0 #EE5E01; */
    width: fit-content;
 }
 #content .stories div:nth-of-type(even) h3{float: right;}
@@ -177,8 +179,8 @@
 #content .stories .free_diving_con .png_pic{
    width: 45%;
    position: absolute;
-   right: 3%;
-   bottom: 0;
+   right: -2%;
+   bottom: 127px;
 }
 
 /* 스쿠버 */
@@ -243,11 +245,17 @@
 /* 테블릿 */
 @media screen and (max-width:1024px) {
 	#wrap #content .stories .con_margin>div {bottom: -15%;}
-   #content{padding-bottom: 350px;}
+   #content{padding-bottom: 170px;}
+	#content .stories .free_diving_con .png_pic{
+      right:-8%;
+      bottom: -53px;
+      width: 54%;
+   }
 }
 
 /* 소형 테블릿 */
 @media screen and (max-width:768px) {
+   #content{padding-bottom: 220px;}
 	#content h2{font-size: 2.5rem;}
    #content h2::before{top:0; margin-left: 220px;}
    #wrap #content .stories .con_margin div{text-align: center; width: 100%; left:0; right:0}
@@ -261,7 +269,31 @@
 
 /* 모바일 */
 @media screen and (max-width:640px) {
+   #content{padding-bottom: 180px;}
 	#content h2{font-size: 2rem;}
    #content h2::before{top:0; margin-left: 170px;}
    #content h3{font-size: 2.1rem;}
+}
+
+/* 모바일2 */
+@media screen and (max-width:420px) {
+   #content .con_margin {margin-bottom: 390px;}
+   #wrap #content .stories .con_margin:nth-of-type(1)>div{
+      bottom: -125%;
+   }
+   #wrap #content .stories .con_margin:nth-of-type(2)>div{
+      bottom: -295%;
+   }
+   #wrap #content .stories .con_margin:nth-of-type(3)>div{
+      bottom: -125%;
+   }
+   #wrap #content .stories .con_margin:nth-of-type(4)>div{
+      bottom: -295%;
+   }
+   #content .stories .free_diving_con .back_img{
+      margin-bottom: -11%;
+   }
+   #content .stories .fun_diving_con .back_img{
+      margin-bottom: -11%;
+   }
 }
