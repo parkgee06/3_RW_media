@@ -286,6 +286,7 @@
 
 /* 모바일 */
 @media screen and (max-width:640px) {
+	#content h2{font-size: 2rem;}
    #content h3 {font-size: 1.3rem;padding: 40px 0;}
    #content h4 {font-size: .95rem;}
    #content section .con_all .media .img_item{
