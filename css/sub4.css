@@ -417,6 +417,11 @@
 /* 모바일 */
 @media screen and (max-width:640px){
    #content{
+      & h2{
+         font-size: 2rem;
+      }
+      & h2::before{top:0; margin-left: 170px;}
+
       & .youtube{
          & .clip{
             & .clip_part {
@@ -453,6 +458,10 @@
 /* 모바일2 */
 @media screen and (max-width:420px) {
    #content{
+      & h2::before{
+         display: none;
+      }
+   
       & .youtube{
          & .clip{
             & .clip_part {

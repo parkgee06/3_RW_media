@@ -514,41 +514,53 @@
 
 /* 소형 테블릿 */
 @media screen and (max-width:768px) {
-   #content .gal_1 .grid-item,.grid-sizer{ width: 50%;}
-   #content .gal_2 {
-      grid-template-columns: repeat(2, 1fr);
+   #content {
+      & h2{
+         font-size: 2rem;
+      }
+      & h2::before{top:0; margin-left: 100px;}
+
+      & .gal_1 .grid-item,.grid-sizer{ width: 50%;}
+      & .gal_2 {
+         grid-template-columns: repeat(2, 1fr);
+      & .gal_3 .gal_marinlife{
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-areas:
+         'a'
+         'b'
+         'c'
+         'd'
+         'f'
+         'aa'
+         'ba'
+         'ca'
+         'da'
+         'fa'
+         'aaa'
+         'baa'
+         'caa'
+         'daa'
+         'eaa'
+         ;}
+      & .gal_3 .gal_marinlife div:nth-of-type(5),
+      & .gal_3 .gal_marinlife div:nth-of-type(18),
+      & .gal_3 .gal_marinlife div:nth-of-type(22),
+      & .gal_3 .gal_marinlife div:nth-of-type(23),
+      & .gal_3 .gal_marinlife div:nth-of-type(24),
+      & .gal_3 .gal_marinlife div:nth-of-type(25),
+      & .gal_3 .gal_marinlife div:nth-of-type(32),
+      & .gal_3 .gal_marinlife div:nth-of-type(35),
+      & .gal_3 .gal_marinlife div:nth-of-type(38){display: none;}
+      }
    }
-   #content .gal_3 .gal_marinlife{
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-areas:
-      'a'
-      'b'
-      'c'
-      'd'
-      'f'
-      'aa'
-      'ba'
-      'ca'
-      'da'
-      'fa'
-      'aaa'
-      'baa'
-      'caa'
-      'daa'
-      'eaa'
-      ;}
-   #content .gal_3 .gal_marinlife div:nth-of-type(5),
-   #content .gal_3 .gal_marinlife div:nth-of-type(18),
-   #content .gal_3 .gal_marinlife div:nth-of-type(22),
-   #content .gal_3 .gal_marinlife div:nth-of-type(23),
-   #content .gal_3 .gal_marinlife div:nth-of-type(24),
-   #content .gal_3 .gal_marinlife div:nth-of-type(25),
-   #content .gal_3 .gal_marinlife div:nth-of-type(32),
-   #content .gal_3 .gal_marinlife div:nth-of-type(35),
-   #content .gal_3 .gal_marinlife div:nth-of-type(38){display: none;}
 
 }
 
 @media screen and (max-width:420px){
-   #content .gal_1 .grid-item,.grid-sizer{width: 100%;}
+   #content{
+      & h2::before{
+         display: none;
+      }
+      & .gal_1 .grid-item,.grid-sizer{width: 100%;}
+   }
 }
