@@ -519,7 +519,6 @@
          font-size: 2rem;
       }
       & h2::before{top:0; margin-left: 100px;}
-
       & .gal_1 .grid-item,.grid-sizer{ width: 50%;}
       & .gal_2 {
          grid-template-columns: repeat(2, 1fr);
