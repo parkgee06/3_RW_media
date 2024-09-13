@@ -503,16 +503,17 @@ h5{
 @media screen and (max-width:768px) {
     #headerArea{
         height: auto;
-        & h3{
-            font-size: 1.7rem;
-        }
         & h1 {
-            a {
+            & a {
                 width: 180px;
                 height: 38px;
                 margin: 30px 0;
-    }
-}
+            }
+        }
+        & h3{
+            font-size: 1.7rem;
+        }
+        
         & .menuOpen{
             display:block;
         }
@@ -553,8 +554,6 @@ h5{
     }
     #footerArea{
         height: 266px;
-        /* bottom: 73px; */
-
         & .footerCon{
             display: block;
             padding: 40px 0;
@@ -564,8 +563,6 @@ h5{
                 width: 250px;
                 height: 53px;
                 margin: 0 auto 18px auto;
-                /* flex-wrap: wrap; */
-                /* justify-content: center; */
             }
             & .footerRight{
                 font-size: .7rem;
@@ -619,9 +616,6 @@ h5{
 /* 모바일 */
 @media screen and (max-width:640px) {
     #footerArea{
-        height: 266px;
-        /* bottom: 73px; */
-
         & .footerCon{
             display: block;
             padding: 40px 0;
@@ -630,7 +624,6 @@ h5{
                 height: 49px;
                 margin-bottom: 25px;
             }
-
         }
         & .move_top{
             top: -203px;
@@ -660,10 +653,10 @@ h5{
             font-size: 1.7rem;
         }
         & h1 {
-            a {
+            & a {
                 margin: 25px 0;
-    }
-}
+            }
+        }
         & .menuOpen{
             display:block;
         }
