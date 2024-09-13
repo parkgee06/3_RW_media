@@ -303,7 +303,7 @@
 /* 일반 pc */
 @media screen and (max-width:1280px) {
    #content {
-      padding-bottom: 500px;
+      padding-bottom: 260px;
       & .menu_4 {
          & .playerWrap{
             & .playInfo{
@@ -332,6 +332,7 @@
 /* 테블릿 */
 @media screen and (max-width:1024px) {
    #content {
+      padding-bottom: 60px;
       & h3{
          font-size: 2rem;
       }
@@ -373,10 +374,14 @@
 /* 소형 테블릿 */
 @media screen and (max-width:768px){
    #content{
-      padding-bottom: 190px;
+      padding-bottom: 30px;
       & .menu_4 {
          & .playerWrap{
             padding: 0;
+            display: block;
+            & .info{
+               margin: 80px 0 0 0;
+            }
             & .playInfo {
                display: flex;
                justify-content: center;
@@ -387,10 +392,12 @@
                }
             }
             & .left_box{
-               margin: 95px auto;
+               margin: 165px auto 50px auto;
             }
             & .playerImg {
-               margin: 0 5%;
+               left: 50%;
+               transform: translateX(-50%);
+               width: 65%;
             }
             & dl{
                margin-top: 50px;
@@ -417,6 +424,7 @@
 /* 모바일 */
 @media screen and (max-width:640px){
    #content{
+      padding-bottom: 25px;
       & h2{
          font-size: 2rem;
       }
@@ -458,10 +466,36 @@
 /* 모바일2 */
 @media screen and (max-width:420px) {
    #content{
+      padding-bottom: 15px;
       & h2::before{
          display: none;
       }
-   
+      & .menu_4 {
+         & .playerWrap{
+            & .playerImg{
+               width: 35%;
+            }
+            & .info{
+               & dl{
+                  & dt{
+                     font-size: 1.5rem;
+                     font-weight: 400;
+                  }
+                  & dd {
+                     font-size: 1.3rem;
+                  }
+               }
+            }
+            
+            & .playInfo{
+               gap: 30px;
+               & li{
+                  width: 80px;
+                  height: 80px;
+               }
+            }
+         }
+      }
       & .youtube{
          & .clip{
             & .clip_part {
