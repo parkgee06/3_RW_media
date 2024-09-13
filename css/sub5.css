@@ -454,6 +454,7 @@
 /* 테블릿 */
 @media screen and (max-width:1024px) {
    #content{
+      padding-bottom: 320px;
       & .contnet_ara section .sub5_top{
          & .pro_sns{
             & .pro_box{
@@ -528,6 +529,7 @@
 /* 소형 테블릿 */
 @media screen and (max-width:768px) {
    #content {
+      padding-bottom: 280px;
       & h2{
          font-size: 2rem;
       }
@@ -594,6 +596,7 @@
 
 @media screen and (max-width:420px){
    #content{
+      padding-bottom: 225px;
       & h2::before{
          display: none;
       }
