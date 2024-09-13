@@ -163,7 +163,7 @@
    width: 670px;
    background: #012138;
    color: #fff;
-   padding: 60px 60px 120px 60px;
+   padding: 60px ;
    z-index: 10;
    box-sizing: border-box;
 }
@@ -837,7 +837,7 @@
                top: 240px;
             }
             & .thum {
-               grid-template-rows: 200px;
+               grid-template-rows: 150px;
                width: 80%;
                left: 10%;
                top: 960px;
@@ -1059,6 +1059,11 @@
          }
       }
       & .menu_3{
+         & .scrollevent{
+            padding: 60px 0 50px 0;
+            mask-size: 100% 200px;
+            margin-bottom: 0;
+         }
          & .con_3{
             grid-template-columns: 1fr;
             & div:nth-last-of-type(4){
@@ -1199,13 +1204,6 @@
             & .diver_box.on{
                right: 30px;
             }
-         }
-      }
-      & .menu_3{
-         & .scrollevent{
-            padding: 60px 0 50px 0;
-            mask-size: 100% 200px;
-            margin-bottom: 0;
          }
       }
       & .menu_4 {
